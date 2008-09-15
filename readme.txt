@@ -1,9 +1,9 @@
 === Plugin Name ===
-Contributors: umarsheikh
-Tags: islam, quran, muslim
+Contributors: Umar Sheikh
+Tags: islam, quran, koran, muslim
 Donate link: N/A
 Requires at least: 2.3.0
-Tested up to: 2.6.1
+Tested up to: 2.6.2
 Stable tag: 1.0
 
 Converts the (Quran 1:1) into a link that links to iknowledge.islamicnature.com.
