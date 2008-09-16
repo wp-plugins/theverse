@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: Umar Sheikh
-Tags: islam, quran, koran, muslim
+Tags: plugin, islam, quran, koran, muslim
 Donate link: N/A
 Requires at least: 2.3.0
 Tested up to: 2.6.2
