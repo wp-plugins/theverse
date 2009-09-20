@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: Umar Sheikh
-Tags: plugin, islam, quran, koran, muslim
+Tags: plugin, islam, quran, koran, muslim, verse
 Donate link: N/A
 Requires at least: 2.3.x
 Tested up to: 2.7.x
@@ -15,7 +15,7 @@ that links to iknowledge.islamicnature.com. The "Q" in Quran is case insensitive
 and you can put a ":" or "." between the surah and verse number. Curly arrows around 
 the text is necessary. The corressponding surah and verse code will go to the actual 
 verse on iKnowledge where you can listen to it, read the rest of the surah and lots more.
-Tags: koran, quran, muslim, islam, plugin.
+Tags: koran, quran, muslim, islam, plugin, verse.
 
 == Installation ==
 
