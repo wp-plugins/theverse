@@ -112,5 +112,5 @@ $text = str_replace("Quran 110:","Surah An-Nasr 110:", $text);
 $text = str_replace("Quran 111:","Surah Al-Masad 111:", $text);
 $text = str_replace("Quran 112:","Surah Al-Ikhlaas 112:", $text);
 $text = str_replace("Quran 113:","Surah Al-Falaq 113:", $text);
-$text = str_replace("Quran 114:","Surah An-Naas 114:", $text); 
+$text = str_replace("Quran 114:","Surah An-Naas 114:", $text);
 ?>

@@ -156,93 +156,37 @@ Al-Fatihah 1:1-7. You can either write Quran or quran and have a ":" or "." in t
 <b>Change Language:</b><br />
 <select style="width:190px;" name="lang">
 <option value="english">Choose Language</option>
-<option value="albanianfeti" <?php if(get_option('tvlang') == 'albanianfeti'){ echo "selected='selected'"; }?>>Albanian: Feti Mehdiu</option>
-<option value="albanianhasan" <?php if(get_option('tvlang') == 'albanianhasan'){ echo "selected='selected'"; }?>>Albanian: Hasan Nahi</option>
-<option value="albaniansherif" <?php if(get_option('tvlang') == 'albaniansherif'){ echo "selected='selected'"; }?>>Albanian: Sherif Ahmeti</option>
-<option value="azerbaijan" <?php if(get_option('tvlang') == 'azerbaijan'){ echo "selected='selected'"; }?>>Azerbaijan</option>
-<option value="azerbaijanmusayev" <?php if(get_option('tvlang') == 'azerbaijanmusayev'){ echo "selected='selected'"; }?>>Azerbaijan: Musayev</option>
-<option value="bangla" <?php if(get_option('tvlang') == 'bangla'){ echo "selected='selected'"; }?>>Bangla</option>
-<option value="bosnian" <?php if(get_option('tvlang') == 'bosnian'){ echo "selected='selected'"; }?>>Bosnian</option>
-<option value="bosniankorkut" <?php if(get_option('tvlang') == 'bosniankorkut'){ echo "selected='selected'"; }?>>Bosnian: Korkut</option>
-<option value="bosnianmustafa" <?php if(get_option('tvlang') == 'bosnianmustafa'){ echo "selected='selected'"; }?>>Bosnian: Mustafa</option>
-<option value="bulgarian" <?php if(get_option('tvlang') == 'bulgarian'){ echo "selected='selected'"; }?>>Bulgarian</option>
-<option value="chinese" <?php if(get_option('tvlang') == 'chinese'){ echo "selected='selected'"; }?>>Chinese</option>
-<option value="chinesesimp" <?php if(get_option('tvlang') == 'chinesesimp'){ echo "selected='selected'"; }?>>Chinese: Simplified</option>
-<option value="czeckhrbek" <?php if(get_option('tvlang') == 'czeckhrbek'){ echo "selected='selected'"; }?>>Czeck: Hrbek</option>
-<option value="czecknykl" <?php if(get_option('tvlang') == 'czecknykl'){ echo "selected='selected'"; }?>>Czeck: Nykl</option>
-<option value="dutch" <?php if(get_option('tvlang') == 'dutch'){ echo "selected='selected'"; }?>>Dutch</option>
-<option value="dutchkeyzer" <?php if(get_option('tvlang') == 'dutchkeyzer'){ echo "selected='selected'"; }?>>Dutch: Keyzer</option>
-<option value="english" <?php if(get_option('tvlang') == 'english'){ echo "selected='selected'"; }?>>English</option>
-<option value="englishahmed" <?php if(get_option('tvlang') == 'englishahmed'){ echo "selected='selected'"; }?>>English: Ahmed Ali</option>
-<option value="englishali" <?php if(get_option('tvlang') == 'englishali'){ echo "selected='selected'"; }?>><?php echo htmlentities('English: Ali Ünal'); ?></option>
-<option value="englishamatul" <?php if(get_option('tvlang') == 'englishamatul'){ echo "selected='selected'"; }?>>English: amatul</option>
-<option value="englisharberry" <?php if(get_option('tvlang') == 'englisharberry'){ echo "selected='selected'"; }?>>English: A.J.Arberry</option>
-<option value="englishasad" <?php if(get_option('tvlang') == 'englishasad'){ echo "selected='selected'"; }?>>English: Asad</option>
-<option value="englishdaryabadi" <?php if(get_option('tvlang') == 'englishdaryabadi'){ echo "selected='selected'"; }?>>English: Daryabadi</option>
-<option value="englishfaridul" <?php if(get_option('tvlang') == 'englishfaridul'){ echo "selected='selected'"; }?>>English: Faridul Haque</option>
-<option value="englishhamid" <?php if(get_option('tvlang') == 'englishhamid'){ echo "selected='selected'"; }?>>English: Hamid S.Aziz</option>
-<option value="englishliteral" <?php if(get_option('tvlang') == 'englishliteral'){ echo "selected='selected'"; }?>>English: Literal</option>
-<option value="englishmaulana" <?php if(get_option('tvlang') == 'englishmaulana'){ echo "selected='selected'"; }?>>English: Maulana Mohammed Ali</option>
-<option value="englishmuhammed" <?php if(get_option('tvlang') == 'englishmuhammed'){ echo "selected='selected'"; }?>>English: Muhammed Sarwar</option>
-<option value="englishpickthall" <?php if(get_option('tvlang') == 'englishpickthall'){ echo "selected='selected'"; }?>>English: Pickthall</option>
-<option value="englishqaribullah" <?php if(get_option('tvlang') == 'englishqaribullah'){ echo "selected='selected'"; }?>>English: Qaribullah</option>
-<option value="englishshakir" <?php if(get_option('tvlang') == 'englishshakir'){ echo "selected='selected'"; }?>>English: Shakir</option>
-<option value="englishtran" <?php if(get_option('tvlang') == 'englishtran'){ echo "selected='selected'"; }?>>English: Transliteration</option>
-<option value="englishus" <?php if(get_option('tvlang') == 'englishus'){ echo "selected='selected'"; }?>>English: US</option>
-<option value="englishyusuf" <?php if(get_option('tvlang') == 'englishyusuf'){ echo "selected='selected'"; }?>>English: Yusuf Ali</option>
-<option value="finnish" <?php if(get_option('tvlang') == 'finnish'){ echo "selected='selected'"; }?>>Finnish</option>
-<option value="french" <?php if(get_option('tvlang') == 'french'){ echo "selected='selected'"; }?>>French</option>
-<option value="frenchhamidullah" <?php if(get_option('tvlang') == 'frenchhamidullah'){ echo "selected='selected'"; }?>>French: Hamidullah</option>
-<option value="german" <?php if(get_option('tvlang') == 'german'){ echo "selected='selected'"; }?>>German</option>
-<option value="germanabubenheim" <?php if(get_option('tvlang') == 'germanabubenheim'){ echo "selected='selected'"; }?>>German: Bubenheim - Elyas</option>
-<option value="germanaburida" <?php if(get_option('tvlang') == 'germanaburida'){ echo "selected='selected'"; }?>>German: Abu-Rida Muhammad</option>
-<option value="germankhoury" <?php if(get_option('tvlang') == 'germankhoury'){ echo "selected='selected'"; }?>>German: Khoury</option>
-<option value="germanzaidan" <?php if(get_option('tvlang') == 'germanzaidan'){ echo "selected='selected'"; }?>>German: Zaidan</option>
-<option value="hausa" <?php if(get_option('tvlang') == 'hausa'){ echo "selected='selected'"; }?>>Hausa</option>
-<option value="indonesian" <?php if(get_option('tvlang') == 'indonesian'){ echo "selected='selected'"; }?>>Indonesian</option>
-<option value="indonesianbahasa" <?php if(get_option('tvlang') == 'indonesianbahasa'){ echo "selected='selected'"; }?>>Indonesian: Bahasa</option>
-<option value="italian" <?php if(get_option('tvlang') == 'italian'){ echo "selected='selected'"; }?>>Italian</option>
-<option value="italianpiccardo" <?php if(get_option('tvlang') == 'italianpiccardo'){ echo "selected='selected'"; }?>>Italian: Piccardo</option>
-<option value="japanese" <?php if(get_option('tvlang') == 'japanese'){ echo "selected='selected'"; }?>>Japanese</option>
-<option value="korean" <?php if(get_option('tvlang') == 'korean'){ echo "selected='selected'"; }?>>Korean</option>
-<option value="kurdi" <?php if(get_option('tvlang') == 'kurdi'){ echo "selected='selected'"; }?>>Kurdi</option>
-<option value="latin" <?php if(get_option('tvlang') == 'latin'){ echo "selected='selected'"; }?>>Latin</option>
-<option value="malayalam" <?php if(get_option('tvlang') == 'malayalam'){ echo "selected='selected'"; }?>>Malayalam</option>
-<option value="malaysian" <?php if(get_option('tvlang') == 'malaysian'){ echo "selected='selected'"; }?>>Malaysian</option>
-<option value="maranao" <?php if(get_option('tvlang') == 'maranao'){ echo "selected='selected'"; }?>>Maranao</option>
-<option value="mexican" <?php if(get_option('tvlang') == 'mexican'){ echo "selected='selected'"; }?>>Mexican</option>
-<option value="norwegianeinar" <?php if(get_option('tvlang') == 'norwegianeinar'){ echo "selected='selected'"; }?>>Norwegian: Einar Berg</option>
-<option value="persian" <?php if(get_option('tvlang') == 'persian'){ echo "selected='selected'"; }?>>Persian</option>
-<option value="persianalha" <?php if(get_option('tvlang') == 'persianalha'){ echo "selected='selected'"; }?>>Persian: &#1575;&#1604;&#1607;&#1740; &#1602;&#1605;&#1588;&#1607;&#8204; &#1575;&#1740;</option>
-<option value="persianhasin" <?php if(get_option('tvlang') == 'persianhasin'){ echo "selected='selected'"; }?>>Persian: &#1581;&#1587;&#1740;&#1606; &#1575;&#1606;&#1589;&#1575;&#1585;&#1740;&#1575;&#1606;</option>
-<option value="persianmekaram" <?php if(get_option('tvlang') == 'persianmekaram'){ echo "selected='selected'"; }?>>Persian: &#1605;&#1705;&#1575;&#1585;&#1605; &#1588;&#1740;&#1585;&#1575;&#1586;&#1740;</option>
-<option value="polish" <?php if(get_option('tvlang') == 'polish'){ echo "selected='selected'"; }?>>Polish</option>
-<option value="polishbielawskiego" <?php if(get_option('tvlang') == 'polishbielawskiego'){ echo "selected='selected'"; }?>>Polish: Bielawskiego</option>
-<option value="portuguese" <?php if(get_option('tvlang') == 'portuguese'){ echo "selected='selected'"; }?>>Portuguese</option>
-<option value="portugueseelhayek" <?php if(get_option('tvlang') == 'portugueseelhayek'){ echo "selected='selected'"; }?>>Portuguese: El-Hayek</option>
-<option value="romanian" <?php if(get_option('tvlang') == 'romanian'){ echo "selected='selected'"; }?>>Romanian</option>
-<option value="romaniangeorge" <?php if(get_option('tvlang') == 'romaniangeorge'){ echo "selected='selected'"; }?>>Romanian: George Grigore</option>
-<option value="russian" <?php if(get_option('tvlang') == 'russian'){ echo "selected='selected'"; }?>>Russian</option>
-<option value="russianone" <?php if(get_option('tvlang') == 'russianone'){ echo "selected='selected'"; }?>>Russian: &#1069;&#1083;&#1100;&#1084;&#1080;&#1088; &#1050;&#1091;&#1083;&#1080;&#1077;&#1074;</option>
-<option value="russianthree" <?php if(get_option('tvlang') == 'russianthree'){ echo "selected='selected'"; }?>>Russian: &#1042;&#1072;&#1083;&#1077;&#1088;&#1080;&#1103; &#1055;&#1086;&#1088;&#1086;&#1093;&#1086;&#1074;&#1072;</option>
-<option value="russiantwo" <?php if(get_option('tvlang') == 'russiantwo'){ echo "selected='selected'"; }?>>Russian: &#1052;.-&#1053;.&#1054;. &#1054;&#1089;&#1084;&#1072;&#1085;&#1086;&#1074;</option>
-<option value="somalialbarwani" <?php if(get_option('tvlang') == 'somalialbarwani'){ echo "selected='selected'"; }?>>Somali: Al-Barwani</option>
-<option value="spanish" <?php if(get_option('tvlang') == 'spanish'){ echo "selected='selected'"; }?>>Spanish</option>
-<option value="spanishcortes" <?php if(get_option('tvlang') == 'spanishcortes'){ echo "selected='selected'"; }?>>Spanish: Cortes</option>
-<option value="swahili" <?php if(get_option('tvlang') == 'swahili'){ echo "selected='selected'"; }?>>Swahili</option>
-<option value="swedishrashad" <?php if(get_option('tvlang') == 'swedishrashad'){ echo "selected='selected'"; }?>>Swedish: Rashad Kalifa</option>
-<option value="tamil" <?php if(get_option('tvlang') == 'tamil'){ echo "selected='selected'"; }?>>Tamil</option>
-<option value="tatar" <?php if(get_option('tvlang') == 'tatar'){ echo "selected='selected'"; }?>>Tatar</option>
-<option value="thai" <?php if(get_option('tvlang') == 'thai'){ echo "selected='selected'"; }?>>Thai</option>
-<option value="turkish" <?php if(get_option('tvlang') == 'turkish'){ echo "selected='selected'"; }?>>Turkish</option>
-<option value="turkishalibulac" <?php if(get_option('tvlang') == 'turkishalibulac'){ echo "selected='selected'"; }?>><?php echo htmlentities('Turkish: Ali Bulaç'); ?></option>
-<option value="turkishelmalili" <?php if(get_option('tvlang') == 'turkishelmalili'){ echo "selected='selected'"; }?>>Turkish: Elmal&#305;l&#305; Hamdi Yaz&#305;r</option>
-<option value="turkishiskender" <?php if(get_option('tvlang') == 'turkishiskender'){ echo "selected='selected'"; }?>>Turkish: &#304;skender Ali Mihr</option>
-<option value="turkishmuhammed" <?php if(get_option('tvlang') == 'turkishmuhammed'){ echo "selected='selected'"; }?>>Turkish: Muhammed Esed</option>
-<option value="turkishyasar" <?php if(get_option('tvlang') == 'turkishyasar'){ echo "selected='selected'"; }?>>Turkish: Ya&#351;ar Nuri <?php echo htmlentities('Öztürk'); ?></option>
-<option value="urduahmed" <?php if(get_option('tvlang') == 'urduahmed'){ echo "selected='selected'"; }?>>Urdu: &#1575;&#1581;&#1605;&#1583; &#1585;&#1590;&#1575; &#1582;&#1575;&#1606;</option>
-<option value="urdujalandhry" <?php if(get_option('tvlang') == 'urdujalandhry'){ echo "selected='selected'"; }?>>Urdu: &#1580;&#1575;&#1604;&#1606;&#1583;&#1729;&#1585;&#1740;</option>
-<option value="uzbek" <?php if(get_option('tvlang') == 'uzbek'){ echo "selected='selected'"; }?>>Uzbek: &#1052;&#1091;&#1093;&#1072;&#1084;&#1084;&#1072;&#1076; &#1057;&#1086;&#1076;&#1080;&#1082;</option>
+<option value="azerbaijan" <?php if(get_option('tvlang') == "azerbaijan"){ echo "selected='selected'"; }?>>Azerbaijan</option>
+<option value="bosnian" <?php if(get_option('tvlang') == "bosnian"){ echo "selected='selected'"; }?>>Bosnian</option>
+<option value="chinese" <?php if(get_option('tvlang') == "chinese"){ echo "selected='selected'"; }?>>Chinese</option>
+<option value="chinesesimp" <?php if(get_option('tvlang') == "chinesesimp"){ echo "selected='selected'"; }?>>Chinese Simplified</option>
+<option value="dutch" <?php if(get_option('tvlang') == "dutch"){ echo "selected='selected'"; }?>>Dutch</option>
+<option value="english" <?php if(get_option('tvlang') == "english"){ echo "selected='selected'"; }?>>English</option>
+<option value="englishasad" <?php if(get_option('tvlang') == "englishasad"){ echo "selected='selected'"; }?>>English Asad</option>
+<option value="englishpickthall" <?php if(get_option('tvlang') == "englishpickthall"){ echo "selected='selected'"; }?>>English Pickthall</option>
+<option value="englishqaribullah" <?php if(get_option('tvlang') == "englishqaribullah"){ echo "selected='selected'"; }?>>English Qaribullah</option>
+<option value="englishshakir" <?php if(get_option('tvlang') == "englishshakir"){ echo "selected='selected'"; }?>>English Shakir</option>
+<option value="englishtran" <?php if(get_option('tvlang') == "englishtran"){ echo "selected='selected'"; }?>>English Transliteration</option>
+<option value="englishus" <?php if(get_option('tvlang') == "englishus"){ echo "selected='selected'"; }?>>English US</option>
+<option value="finnish" <?php if(get_option('tvlang') == "finnish"){ echo "selected='selected'"; }?>>Finnish</option>
+<option value="french" <?php if(get_option('tvlang') == "french"){ echo "selected='selected'"; }?>>French</option>
+<option value="german" <?php if(get_option('tvlang') == "german"){ echo "selected='selected'"; }?>>German</option>
+<option value="indonesian" <?php if(get_option('tvlang') == "indonesian"){ echo "selected='selected'"; }?>>Indonesian</option>
+<option value="italian" <?php if(get_option('tvlang') == "italian"){ echo "selected='selected'"; }?>>Italian</option>
+<option value="japanese" <?php if(get_option('tvlang') == "japanese"){ echo "selected='selected'"; }?>>Japanese</option>
+<option value="korean" <?php if(get_option('tvlang') == "korean"){ echo "selected='selected'"; }?>>Korean</option>
+<option value="latin" <?php if(get_option('tvlang') == "latin"){ echo "selected='selected'"; }?>>Latin</option>
+<option value="malaysian" <?php if(get_option('tvlang') == "malaysian"){ echo "selected='selected'"; }?>>Malaysian</option>
+<option value="mexican" <?php if(get_option('tvlang') == "mexican"){ echo "selected='selected'"; }?>>Mexican</option>
+<option value="persian" <?php if(get_option('tvlang') == "persian"){ echo "selected='selected'"; }?>>Persian</option>
+<option value="polish" <?php if(get_option('tvlang') == "polish"){ echo "selected='selected'"; }?>>Polish</option>
+<option value="portuguese" <?php if(get_option('tvlang') == "portuguese"){ echo "selected='selected'"; }?>>Portuguese</option>
+<option value="russian" <?php if(get_option('tvlang') == "russian"){ echo "selected='selected'"; }?>>Russian</option>
+<option value="spanish" <?php if(get_option('tvlang') == "spanish"){ echo "selected='selected'"; }?>>Spanish</option>
+<option value="swahili" <?php if(get_option('tvlang') == "swahili"){ echo "selected='selected'"; }?>>Swahili</option>
+<option value="tamil" <?php if(get_option('tvlang') == "tamil"){ echo "selected='selected'"; }?>>Tamil</option>
+<option value="thai" <?php if(get_option('tvlang') == "thai"){ echo "selected='selected'"; }?>>Thai</option>
+<option value="turkish" <?php if(get_option('tvlang') == "turkish"){ echo "selected='selected'"; }?>>Turkish</option>
 </select>
 
 <p class="submit">
