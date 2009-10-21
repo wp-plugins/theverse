@@ -5,7 +5,7 @@ Plugin URI: http://iknowledge.islamicnature.com
 Description: Rewrites Quran 1:1-7 etc into the Surah name and links to iKnowledge.islamicnature.com
 Author: Umar Sheikh
 Author URI: http://www.indezinez.com
-Version: 1.1
+Version: 1.2
 */
 
 
@@ -13,100 +13,112 @@ Version: 1.1
 $lang = get_option('tvlang');
 
 if($lang == ""){
-add_option("tvlang", 'english', '', 'yes');
+	add_option("tvlang", 'english', '', 'yes');
 }
 
+if($lang == "englishahmed" || $lang == "englishali" || $lang == "englishamatul" || $lang == "englisharberry" || $lang == "englishasad" || $lang == "englishdaryabadi" || $lang == "englishfaridul" || $lang == "englishhamid" || $lang == "englishmaulana" || $lang == "englishmuhammed" || $lang == "englishpickthall" || $lang == "englishqaribullah" || $lang == "englishshakir" || $lang == "englishus" || $lang == "englishyusuf"){
+	update_option('tvlang', 'english');
+}
 
 // Hook for adding admin menus
 add_action('admin_menu', 'mt_add_pages');
 
 // action function for above hook
-function mt_add_pages() {
-    // Add a new submenu under Options:
-    add_options_page('theVerse', 'theVerse', 8, 'theverse', 'mt_options_page');
+function mt_add_pages(){
+	// Add a new submenu under Options:
+	add_options_page('theVerse', 'theVerse', 8, 'theverse', 'mt_options_page');
 }
 
 // Replace function One
 function theVerseOne($text){
 
-preg_match_all('[\([Qq]uran [0-9]{1,3}[:.][0-9]{1,3}\)]', $text, $matches);
+	// Removed langs fix
+	if(get_option('tvlang') == "englishahmed" || get_option('tvlang') == "englishali" || get_option('tvlang') == "englishamatul" || get_option('tvlang') == "englisharberry" || get_option('tvlang') == "englishasad" || get_option('tvlang') == "englishdaryabadi" || get_option('tvlang') == "englishfaridul" || get_option('tvlang') == "englishhamid" || get_option('tvlang') == "englishmaulana" || get_option('tvlang') == "englishmuhammed" || get_option('tvlang') == "englishpickthall" || get_option('tvlang') == "englishqaribullah" || get_option('tvlang') == "englishshakir" || get_option('tvlang') == "englishus" || get_option('tvlang') == "englishyusuf"){
+		update_option('tvlang', 'english');
+	}
 
-$matchesone = $matches[0];
-$matchestwo = $matches[0];
-$matchesthree = $matches[0];
-$matcheslast = $matches[0];
+	preg_match_all('[\([Qq]uran [0-9]{1,3}[:.][0-9]{1,3}\)]', $text, $matches);
 
-while(list ($key, $val) = each ($matchesone)){
+	$matchesone = $matches[0];
+	$matchestwo = $matches[0];
+	$matchesthree = $matches[0];
+	$matcheslast = $matches[0];
 
-$matches_left_final[$key] = preg_replace(array("[[:.][0-9]{1,3}\)]","[\([Qq]uran ]"),"",$matches[0][$key]);
+	while(list ($key, $val) = each ($matchesone)){
 
-}
+	$matches_left_final[$key] = preg_replace(array("[[:.][0-9]{1,3}\)]","[\([Qq]uran ]"),"",$matches[0][$key]);
 
-while(list ($key, $val) = each ($matchestwo)){
+	}
 
-$matches_right_final[$key] = preg_replace(array("[\([Qq]uran [0-9]{1,3}[:.]]", "[\)]"),"",$matches[0][$key]);
+	while(list ($key, $val) = each ($matchestwo)){
 
-}
+	$matches_right_final[$key] = preg_replace(array("[\([Qq]uran [0-9]{1,3}[:.]]", "[\)]"),"",$matches[0][$key]);
 
-while(list ($key, $val) = each ($matchesthree)){
+	}
 
-$matches_final[$key] = "(<a target='_blank' href='http://iknowledge.islamicnature.com/quran/snum/".$matches_left_final[$key]."/vnum/".$matches_right_final[$key]."/lang/".get_option('tvlang')."/'>Quran ".$matches_left_final[$key].":".$matches_right_final[$key]."</a>)";
+	while(list ($key, $val) = each ($matchesthree)){
 
-}
+	$matches_final[$key] = "(<a target='_blank' href='http://iknowledge.islamicnature.com/quran/snum/".$matches_left_final[$key]."/vnum/".$matches_right_final[$key]."/lang/".get_option('tvlang')."/'>Quran ".$matches_left_final[$key].":".$matches_right_final[$key]."</a>)";
 
-$textdone = str_replace($matcheslast, $matches_final, $text);
+	}
 
-return $textdone;
+	$textdone = str_replace($matcheslast, $matches_final, $text);
+
+	return $textdone;
 
 }
 
 // Replace function Two
 function theVerseTwo($text){
 
-preg_match_all('[\([Qq]uran [0-9]{1,3}[:.][0-9]{1,3}-[0-9]{1,3}\)]', $text, $matches);
+	// Removed langs fix
+	if(get_option('tvlang') == "englishahmed" || get_option('tvlang') == "englishali" || get_option('tvlang') == "englishamatul" || get_option('tvlang') == "englisharberry" || get_option('tvlang') == "englishasad" || get_option('tvlang') == "englishdaryabadi" || get_option('tvlang') == "englishfaridul" || get_option('tvlang') == "englishhamid" || get_option('tvlang') == "englishmaulana" || get_option('tvlang') == "englishmuhammed" || get_option('tvlang') == "englishpickthall" || get_option('tvlang') == "englishqaribullah" || get_option('tvlang') == "englishshakir" || get_option('tvlang') == "englishus" || get_option('tvlang') == "englishyusuf"){
+		update_option('tvlang', 'english');
+	}
 
-$matchesone = $matches[0];
-$matchestwo = $matches[0];
-$matchesthree = $matches[0];
-$matchesx = $matches[0];
-$matcheslast = $matches[0];
+	preg_match_all('[\([Qq]uran [0-9]{1,3}[:.][0-9]{1,3}-[0-9]{1,3}\)]', $text, $matches);
 
-while(list ($key, $val) = each ($matchesone)){
+	$matchesone = $matches[0];
+	$matchestwo = $matches[0];
+	$matchesthree = $matches[0];
+	$matchesx = $matches[0];
+	$matcheslast = $matches[0];
 
-$matches_left_final[$key] = preg_replace(array("[[:.][0-9]{1,3}-[0-9]{1,3}\)]","[\([Qq]uran ]"),"",$matches[0][$key]);
+	while(list ($key, $val) = each ($matchesone)){
 
-}
+	$matches_left_final[$key] = preg_replace(array("[[:.][0-9]{1,3}-[0-9]{1,3}\)]","[\([Qq]uran ]"),"",$matches[0][$key]);
 
-while(list ($key, $val) = each ($matchestwo)){
+	}
 
-$matches_right_final[$key] = preg_replace(array("[\([Qq]uran [0-9]{1,3}[:.]]", "[-[0-9]{1,3}\)]"),"",$matches[0][$key]);
+	while(list ($key, $val) = each ($matchestwo)){
 
-}
+	$matches_right_final[$key] = preg_replace(array("[\([Qq]uran [0-9]{1,3}[:.]]", "[-[0-9]{1,3}\)]"),"",$matches[0][$key]);
 
-while(list ($key, $val) = each ($matchesx)){
+	}
 
-$matches_rightx_final[$key] = preg_replace(array("[[:.][0-9]{1,3}]","[\([Qq]uran [0-9]{1,3}]","[\)]"),"",$matches[0][$key]);
+	while(list ($key, $val) = each ($matchesx)){
 
-}
+	$matches_rightx_final[$key] = preg_replace(array("[[:.][0-9]{1,3}]","[\([Qq]uran [0-9]{1,3}]","[\)]"),"",$matches[0][$key]);
 
-while(list ($key, $val) = each ($matchesthree)){
+	}
 
-$matches_final[$key] = "(<a target='_blank' href='http://iknowledge.islamicnature.com/quran/snum/".$matches_left_final[$key]."/vnum/".$matches_right_final[$key].str_replace("-","/",$matches_rightx_final[$key])."/lang/".get_option('tvlang')."/'>Quran ".$matches_left_final[$key].":".$matches_right_final[$key].$matches_rightx_final[$key]."</a>)";
+	while(list ($key, $val) = each ($matchesthree)){
 
-}
+	$matches_final[$key] = "(<a target='_blank' href='http://iknowledge.islamicnature.com/quran/snum/".$matches_left_final[$key]."/vnum/".$matches_right_final[$key].str_replace("-","/",$matches_rightx_final[$key])."/lang/".get_option('tvlang')."/'>Quran ".$matches_left_final[$key].":".$matches_right_final[$key].$matches_rightx_final[$key]."</a>)";
 
-$textdone = str_replace($matcheslast, $matches_final, $text);
+	}
 
-return $textdone;
+	$textdone = str_replace($matcheslast, $matches_final, $text);
+
+	return $textdone;
 
 }
 
 // Replace function three
 function theVerseThree($text){
 
-include("surahnames.php");
-
-return $text;
+	include("surahnames.php");
+	return $text;
 
 }
 
@@ -173,23 +185,8 @@ Al-Fatihah 1:1-7. You can either write Quran or quran and have a ":" or "." in t
 <option value="dutch" <?php if(get_option('tvlang') == 'dutch'){ echo "selected='selected'"; }?>>Dutch</option>
 <option value="dutchkeyzer" <?php if(get_option('tvlang') == 'dutchkeyzer'){ echo "selected='selected'"; }?>>Dutch: Keyzer</option>
 <option value="english" <?php if(get_option('tvlang') == 'english'){ echo "selected='selected'"; }?>>English</option>
-<option value="englishahmed" <?php if(get_option('tvlang') == 'englishahmed'){ echo "selected='selected'"; }?>>English: Ahmed Ali</option>
-<option value="englishali" <?php if(get_option('tvlang') == 'englishali'){ echo "selected='selected'"; }?>><?php echo htmlentities('English: Ali Ünal'); ?></option>
-<option value="englishamatul" <?php if(get_option('tvlang') == 'englishamatul'){ echo "selected='selected'"; }?>>English: amatul</option>
-<option value="englisharberry" <?php if(get_option('tvlang') == 'englisharberry'){ echo "selected='selected'"; }?>>English: A.J.Arberry</option>
-<option value="englishasad" <?php if(get_option('tvlang') == 'englishasad'){ echo "selected='selected'"; }?>>English: Asad</option>
-<option value="englishdaryabadi" <?php if(get_option('tvlang') == 'englishdaryabadi'){ echo "selected='selected'"; }?>>English: Daryabadi</option>
-<option value="englishfaridul" <?php if(get_option('tvlang') == 'englishfaridul'){ echo "selected='selected'"; }?>>English: Faridul Haque</option>
-<option value="englishhamid" <?php if(get_option('tvlang') == 'englishhamid'){ echo "selected='selected'"; }?>>English: Hamid S.Aziz</option>
 <option value="englishliteral" <?php if(get_option('tvlang') == 'englishliteral'){ echo "selected='selected'"; }?>>English: Literal</option>
-<option value="englishmaulana" <?php if(get_option('tvlang') == 'englishmaulana'){ echo "selected='selected'"; }?>>English: Maulana Mohammed Ali</option>
-<option value="englishmuhammed" <?php if(get_option('tvlang') == 'englishmuhammed'){ echo "selected='selected'"; }?>>English: Muhammed Sarwar</option>
-<option value="englishpickthall" <?php if(get_option('tvlang') == 'englishpickthall'){ echo "selected='selected'"; }?>>English: Pickthall</option>
-<option value="englishqaribullah" <?php if(get_option('tvlang') == 'englishqaribullah'){ echo "selected='selected'"; }?>>English: Qaribullah</option>
-<option value="englishshakir" <?php if(get_option('tvlang') == 'englishshakir'){ echo "selected='selected'"; }?>>English: Shakir</option>
 <option value="englishtran" <?php if(get_option('tvlang') == 'englishtran'){ echo "selected='selected'"; }?>>English: Transliteration</option>
-<option value="englishus" <?php if(get_option('tvlang') == 'englishus'){ echo "selected='selected'"; }?>>English: US</option>
-<option value="englishyusuf" <?php if(get_option('tvlang') == 'englishyusuf'){ echo "selected='selected'"; }?>>English: Yusuf Ali</option>
 <option value="finnish" <?php if(get_option('tvlang') == 'finnish'){ echo "selected='selected'"; }?>>Finnish</option>
 <option value="french" <?php if(get_option('tvlang') == 'french'){ echo "selected='selected'"; }?>>French</option>
 <option value="frenchhamidullah" <?php if(get_option('tvlang') == 'frenchhamidullah'){ echo "selected='selected'"; }?>>French: Hamidullah</option>
