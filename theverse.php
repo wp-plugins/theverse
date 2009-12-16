@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: theVerse
-Plugin URI: http://iknowledge.islamicnature.com
+Plugin URI: http://iknowledge.islamicnature.com/extras.php
 Description: Rewrites Quran 1:1-7 etc into the Surah name and links to iKnowledge.islamicnature.com
 Author: Umar Sheikh
 Author URI: http://www.indezinez.com
