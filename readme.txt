@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== theVerse ===
 Contributors: Umar Sheikh
 Tags: plugin, islam, quran, koran, muslim, verse
 Donate link: N/A
