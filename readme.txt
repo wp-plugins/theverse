@@ -3,7 +3,6 @@ Contributors: Umar Sheikh
 Tags: plugin, islam, quran, koran, muslim, verse
 Donate link: N/A
 Requires at least: 2.3.x
-Tested up to: 2.9
 Stable tag: 1.2
 
 Converts the (Quran 1:1) into a link that links to iknowledge.islamicnature.com.
