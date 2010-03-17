@@ -186,6 +186,7 @@ Al-Fatihah 1:1-7. You can either write Quran or quran and have a ":" or "." in t
 <option value="dutchkeyzer" <?php if(get_option('tvlang') == 'dutchkeyzer'){ echo "selected='selected'"; }?>>Dutch: Keyzer</option>
 <option value="english" <?php if(get_option('tvlang') == 'english'){ echo "selected='selected'"; }?>>English</option>
 <option value="englishliteral" <?php if(get_option('tvlang') == 'englishliteral'){ echo "selected='selected'"; }?>>English: Literal</option>
+<option value="englishsahih" <?php if(get_option('tvlang') == 'englishsahih'){ echo "selected='selected'"; }?>>English: Sahih International</option>
 <option value="englishtran" <?php if(get_option('tvlang') == 'englishtran'){ echo "selected='selected'"; }?>>English: Transliteration</option>
 <option value="finnish" <?php if(get_option('tvlang') == 'finnish'){ echo "selected='selected'"; }?>>Finnish</option>
 <option value="french" <?php if(get_option('tvlang') == 'french'){ echo "selected='selected'"; }?>>French</option>
