@@ -1,5 +1,5 @@
 === theVerse ===
-Contributors: Umar Sheikh
+Contributors: indezinez
 Tags: plugin, islam, quran, koran, muslim, verse
 Donate link: N/A
 Requires at least: 2.3.x
